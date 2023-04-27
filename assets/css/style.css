@@ -1,0 +1,102 @@
+
+
+.tarjeta {
+    margin: 2%;
+    display: list;
+}
+.logo{
+    width:140px;
+    height:100px;
+    align-content: center;    
+}
+
+.logo_esquina{
+    width: 30px;
+    height: 30px;
+}
+
+.imagen-digimon img {
+  max-width: 100px;
+}
+
+div.carousel-inner {
+  max-width: auto;
+  margin: 0 auto;
+}
+
+
+.intro{
+    width: 40%; /*Establece el ancho del elemento al 40% del ancho de su contenedor*/ 
+    margin:auto; /* Establece los márgenes del elemento en "auto" para centrar el elemento horizontalmente en su contenedor*/ 
+    border: 2px;  /* Establece el ancho del borde del elemento en 2 píxeles*/ 
+    border-style: solid;  /* Establece el estilo del borde en "solid" para que el borde sea sólido en lugar de punteado o discontinuo*/ 
+    border-radius: 10px;   /* Establece el radio de la esquina del borde en 10 píxeles para redondear las esquinas del borde*/ 
+    padding: 10px;    /* Establece el relleno interno del elemento en 10 píxeles*/ 
+    height: auto; /* Establece la altura del elemento en "auto", lo que significa que se ajustará automáticamente para contener todo su contenido*/ 
+    display: flex; /* Establece el tipo de visualización del elemento en "flex", lo que permite utilizar flexbox para el diseño.*/ 
+    flex-direction: column;  /* Establece la dirección de flexbox en "column", lo que significa que los elementos dentro del elemento se apilarán verticalmente en lugar de horizontalmente*/ 
+    justify-content: center;  /* Establece la alineación vertical de los elementos en el centro del contenedor*/ 
+    align-items: center;   /* Establece la alineación horizontal de los elementos en el centro del contenedor.*/ 
+    text-align: center; /* Establece la alineación horizontal del contenido del elemento en el centro.*/ 
+}
+
+.info{
+    padding:5px;
+}
+
+footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  .social-icons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons li {
+    margin: 0 10px;
+  }
+  
+  .social-icons li a {
+    display: block;
+  }
+  
+  .icon {
+    width: 30px;
+    height: 30px;
+    transition: color 0.3s ease;
+  }
+  
+  .icon:hover {
+    color: #1da1f2;
+  }
+
+.img_digimon:hover{
+    transform: scale(3);
+  }
+#title{
+  text-align: center;
+  text-shadow:  2px 2px 0 blue;
+  font-family:"Serif" , cursive;
+}
+.video-container{
+  display:flex;
+  justify-content: center;
+}
+
+/*Margen entre los dos videos*/
+.video-container iframe{
+  margin: 0 20px;
+}

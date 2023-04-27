@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digimon Adventure</title>
+    <link rel="shortcut icon" href="./assets/img/Favicon.x-ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Iconos desde Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!--el bg-light marca la tonalidad de fondo-->
+
+     <!--Barra de navegacion  fixed-top es para fijar la barra nav--> 
+     <nav class="navbar bg-gradient" data-bs-theme="dark navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/Favicon.x-ico" alt="" class="logo_esquina">
+              </a>
+          <!--Logo de digimon-->
+            <a href="#">
+            <img src="./assets/img/png-transparent-patamon-digimon-adventure-tri-matt-ishida-logo-digimon-text-logo-cartoon.png" class="logo">
+            </a>
+
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://es.bandainamcoent.eu/digimon/digimon-survive">Sitio Oficial Digimon</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Navegación</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#introduccion">Introducción</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#carrusel">Escenarios</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#series">Series</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#buscador">Buscador</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#resumen">Resumen</a></li>
+                </ul>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>-->
+          </div>
+        </div>
+      </nav>
+
+            <div class="intro col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <h1>
+                La Guia Definitiva
+            </h1>
+                <!--Test Toasts-->
+                <div>
+                    <button type="button" class="btn btn-primary" id="liveToastBtn">
+                        Descubrir
+                    </button>
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                        <div class="toast-header">
+                            <img src="./assets/img/Favicon.x-ico" class="rounded me-2" alt="...">
+                            <strong class="me-auto">Gennai</strong>
+                            <small>Hace instantes</small>
+                            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                        </div>
+                            <div class="toast-body">
+                                ¡Hola soy Gennai! y has sido elegido para este nueva aventura.
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <!--Test Toasts-->
+        <div>
+            <br>
+        </div>
+        <section id="introduccion">
+          <h2 id="title">Introducción</h2>
+        <div class="info">
+            <div class="card-group">
+                <div class="card">
+                  <img src="./assets/img/digimon.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Digimon</h5>
+                    <p class="card-text">Los Digimon son criaturas digitales que digievolucionan para mejorar su nivel de poder y habilidades con respecto a su anterior forma. Los Digimon se dividen según diferentes tipos o atributos, actuando o cumpliendo un determinado rol (como un programa informático) que pueden ser principalmente de tipo: datos, vacuna o virus. El número de digievoluciones naturales llega hasta seis</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./assets/img/digivice.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Digivice</h5>
+                    <p class="card-text">Este artefacto es portado por humanos que estén criando un Digimon, o que sean compañeros de uno. El Digivice tiene la característica especial de conectar, de algún modo, los sentimientos de su portador y su digimon. Aunque se dice que la habilidad principal de un Digivice es la de permitir que los digimon evolucionen temporalmente a sus fases más poderosas</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./assets/img/tamers.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Tamers</h5>
+                    <p class="card-text">Los Niños Elegidos son elegidos por seres benévolos para proteger el Mundo Digital (y ocasionalmente el Mundo Real) de las fuerzas malignas. El Mundo Digital está originado por las redes de comunicación terrestre, y es vulnerable a los ataques. Los Digimon que viven ahí no son capaces de solucionarlo, por lo que los Niños son llamados para combatirlo</p>
+                    <p class="card-text"><small class="text-muted">Última actualización hace 3 minutos</small></p>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+      <br>
+
+        <!--Carrusel-->
+        <section id="carrusel">
+          <h2 id="title">Escenarios</h2> 
+        <div class="">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="./assets/img/Fondo_3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./assets/img/fondo_2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/Fondo_1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Siguiente</span>
+                </button>
+              </div>
+        </div>  
+      </section>
+   <br> 
+  <!--Donde ver la serie-->
+  <section id="series">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+      <h2 id="title">Ver Series</h2>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Enlace</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Digimon Adventure (1999)</td>
+            <td><a href="https://www.crunchyroll.com/digimon-adventure" target="_blank">https://www.crunchyroll.com/digimon-adventure</a></td>
+          </tr>
+          <tr>
+            <td>Digimon Tamers (2001)</td>
+            <td><a href="https://www.crunchyroll.com/digimon-tamers" target="_blank">https://www.crunchyroll.com/digimon-tamers</a></td>
+          </tr>
+          <tr>
+            <td>Digimon Frontier (2002)</td>
+            <td><a href="https://www.crunchyroll.com/digimon-frontier" target="_blank">https://www.crunchyroll.com/digimon-frontier</a></td>
+          </tr>
+          <tr>
+            <td>Digimon Savers (2006)</td>
+            <td><a href="https://www.crunchyroll.com/digimon-savers" target="_blank">https://www.crunchyroll.com/digimon-savers</a></td>
+          </tr>
+          <tr>
+            <td>Digimon Xros Wars (2010)</td>
+            <td><a href="https://www.crunchyroll.com/digimon-xros-wars" target="_blank">https://www.crunchyroll.com/digimon-xros-wars</a></td>
+          </tr>
+          <tr>
+            <td>Digimon Adventure tri (2015)</td>
+            <td><a href="https://www.crunchyroll.com/digimon-adventure-tri" target="_blank">https://www.crunchyroll.com/digimon-adventure-tri</a></td>
+          </tr>
+          <tr>
+            <td>Digimon Universe: Appli Monsters (2016)</td>
+            <td><a href="https://www.crunchyroll.com/es-es/digimon-universe-appli-monsters" target="_blank">https://www.crunchyroll.com/es-es/digimon-universe-appli-monsters</a></td>
+          </tr>
+          <tr>
+            <td>Digimon Adventure (2020)</td>
+            <td><a href="https://www.crunchyroll.com/es-es/digimon-adventure-2020" target="_blank">https://www.crunchyroll.com/es-es/digimon-adventure-2020</a></td>
+          </tr>
+          <tr>
+            <td>Digimon Ghost Game (2021)</td>
+            <td><a href="https://www.crunchyroll.com/es-es/digimon-ghost-game" target="_blank">https://www.crunchyroll.com/es-es/digimon-ghost-game</a></td>
+          </tr>
+        </tbody>
+      </table>
+      <h6>*Algunas series pueden no estar disponibles por restricciones geográficas</h6>
+    </div>
+  </div>
+</div>
+</section>
+<br>
+   <!--Tabla para presentar los Digimon-->   
+  <section id="buscador">
+    <h2 id="title">Listado de criaturas digitales</h2>
+    <br>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <div class="input-group mb-3">
+            <!--Buscador por nombre-->
+            <input type="text" class="form-control" placeholder="Buscador de criaturas.." id="search-input">
+            <button class="btn btn-primary fa fa-search" type ="button" id="search-button"></button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!--Buscador por niveles-->
+      <div class="col-md-6 offset-md-3 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="input-group mb-3">
+          <select class="form-select" id="nivel-select">
+            <option value="">Todos los niveles</option>
+            <option value="In Training">In Training</option>
+            <option value="Rookie">Rookie</option>
+            <option value="Champion">Champion</option>
+            <option value="Ultimate">Ultimate</option>
+            <option value="Mega">Mega</option>
+          </select>
+        </div>
+      <br>
+      <table class="table table-striped container">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Imagen</th>
+            <th scope="col">Nivel</th>
+            <th scope="col">Información</th>
+            <!--<th scope="col">Posibles Evoluciones</th>-->
+          </tr>
+        </thead>
+        <tbody id="contenido">
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <br>
+
+  <section id="resumen"><br>
+    <h2 id="title">Resumen</h2>
+    <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Bh64M6sKdJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uetyZg_32lU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
+    </div>
+  </section><br>
+
+    
+    <div class="container">
+        <footer>
+            <a class="" href="#">
+                <img src="./assets/img/Favicon.x-ico" alt="" class="logo_esquina">
+              </a>
+            <p>Elaborado por Dann LeBeau</p>
+            <p>Todos los derechos reservados &copy; 2023</p>
+            <ul class="social-icons">
+              <!--<li><a href="#"><img src="./assets/img/fb_logo.png" alt="Facebook icon" class="icon"></a></li>
+              <li><a href="#"><img src="./assets/img/twitter_logo.png" alt="Twitter icon" class="icon"></a></li>
+              <li><a href="#"><img src="./assets/img/ig_logo.png" alt="Instagram icon" class="icon"></a></li>--> 
+              <li><a href="#"><i class="fab fa-facebook icon"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
+              <li><a href="#"><i class="fab fa-github icon"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    
+    
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
