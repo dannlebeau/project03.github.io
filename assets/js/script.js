@@ -106,4 +106,54 @@ if (toastTrigger) {
 
 
 
+//Api de TMDb
+
+// Llamada a la API de TMDb
+
+fetch('https://api.themoviedb.org/3/search/tv?api_key=de56eb6f91a9803bcf76be6c9fa18cbe&query=digimon')
+  .then(response => response.json())
+  .then(data => {
+    // Obtener el elemento de la tabla
+    const tableBody = document.getElementById('table-body');
+
+    // Iterar por cada serie y crear una fila en la tabla
+    data.results.forEach(serie => {
+      // Crear la fila y las celdas de la tabla
+      const row = document.createElement('tr');
+      const titleCell = document.createElement('td');
+      const linksCell = document.createElement('td');
+      const scoreCell = document.createElement('td');
+      const posterCell = document.createElement('td');
+      
+      // Agregar el título y el enlace a la fila, esta bien pero genera un error y hay que reemplazar el & por el guion (-)
+      //titleCell.innerText = serie.name;
+      //linkCell.innerHTML = `<a href="https://www.crunchyroll.com/${serie.name}" target="_blank">https://www.crunchyroll.com/${serie.name}</a>`;
+
+      // Agregar el título y el enlace a la fila 
+        titleCell.innerText = serie.name;
+        //const crunchyrollLink = `https://www.crunchyroll.com/${serie.name.replace(/ /g, '-')}`;
+        //linkCell.innerHTML = `<a href="${crunchyrollLink}" target="_blank">${crunchyrollLink}</a>`;
+        linksCell.innerHTML = `
+        <a href="https://www.crunchyroll.com/${serie.name.replace(/\s+/g, '-')}" target="_blank">https://www.crunchyroll.com/${serie.name.replace(/\s+/g, '-')}</a>
+        <br>
+        <br>
+        <a href="https://jkanime.net/${encodeURIComponent(serie.name.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}" target="_blank">https://jkanime.net/buscar/${serie.name}</a>`;
+
+      // Agregar la puntuación y el poster a la fila
+      scoreCell.innerText = serie.vote_average;
+      posterCell.innerHTML = `<img src="https://image.tmdb.org/t/p/w200${serie.poster_path}">`;
+
+      // Agregar las celdas a la fila
+      row.appendChild(titleCell);
+      row.appendChild(linksCell);
+      //row.appendChild(jkanimeLinkCell);
+      row.appendChild(scoreCell);
+      row.appendChild(posterCell);
+
+      // Agregar la fila a la tabla
+      tableBody.appendChild(row);
+    });
+  });
+
+
 
