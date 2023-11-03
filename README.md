@@ -1,5 +1,5 @@
 # Digimon project
-## To see the end result: https://dannlebeau.github.io/project03.github.io/
+## To see the end result [Web](https://dannlebeau.github.io/project03.github.io/)
 
 ## On the page you can see sections such as the introduction where it is explained what the digimon, the digivice and the tamers are
 ![image](https://github.com/dannlebeau/project03.github.io/assets/132018100/9f02d0fa-8027-46fe-afa0-6b95b410a12b)
